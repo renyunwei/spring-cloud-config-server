@@ -1,16 +1,23 @@
 server:
-      port: 7001
+  port: 8001
+      
+eureka:
+  instance: 
+    prefer-ip-address: true
+  client: 
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
   
 spring:
   application:
-    name: pring-cloud-config-server
+    name: spring-cloud-config-server
   cloud:
     config:
       server:
         git:
-          uri: git@github.com:Star4Sky/spring-cloud-config.git
+          uri: git@github.com:renyunwei/config-service.git
           baseDir: H:\STS\workSpace_boot\config-server
-#          search-paths: /**
+          search-paths: /spring-server-a
 #          username: renyunwei                                    # 访问git仓库的用户名
 #          password: renywei.7953506                              # 访问git仓库的用户密码
           ignoreLocalSshSettings: true
