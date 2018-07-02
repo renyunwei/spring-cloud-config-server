@@ -1,0 +1,47 @@
+server:
+      port: 7001
+  
+spring:
+  application:
+    name: pring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:Star4Sky/spring-cloud-config.git
+          baseDir: H:\STS\workSpace_boot\config-server
+#          search-paths: /**
+#          username: renyunwei                                    # 访问git仓库的用户名
+#          password: renywei.7953506                              # 访问git仓库的用户密码
+          ignoreLocalSshSettings: true
+          privateKey: |
+                      -----BEGIN RSA PRIVATE KEY-----
+                      MIIEpAIBAAKCAQEA4H4qVpQf0xBDHIGHZiJEIsy6WXJjBtpizZMAchGRYjBVDbZT
+                      xmERl2BawUtI3Fo34Pht+xEwMQulamLnKKzQ5Ouc5fQGpnSioHpIkIHYo1qyS+QK
+                      8Dj2aUf4wOi8ADEjqa9HYcQelfjY6TNc0Qoa6hS1rG6zBtDokKshwgEOvMMVBiH+
+                      fudcWagie065L+zti8xG6vfl1FhriFVpGhHqdCWaM2iGoMqL6/VPiGjNK+A1IijY
+                      J1ARoHMzrwh2CbXsmxC/fJf0ib6lQswqqrfEKBm1XSVkzXI9ODpYgxmevWat+FLp
+                      ELmXZunJX/Iloy3SM6B7dtdEL6BC9pP+S+wfSwIDAQABAoIBAExqJbc6zGpnyrBV
+                      VuVpHJBL59KyoQqgI6meNDSfzkEB+rGkMngAaqCAZ+QL4E1BWGv3pFglzaWkNTY1
+                      XEH4MVL68HlFy021vfWqKjEmQbu5D5/Ni/uhKB9GJGJl1jiqgV0tELsyqsaZ4hvf
+                      I+Tz751mV0DOnZngWomD9wW2nnGZwrHa4EoPf1itrM7g1sJ7D6x3hoMQMzhfIcTP
+                      Vjtfdz6YuvNlW3ZT3bFPEM7qX8qkT/wmiMcmCJSaPXG8ZYDo74PCVWzoRfuBdRFp
+                      5M03aA/Q071aOIvYucHInFu9ikvvwOywTbpl3Z96uPbT9Xg7tIH9UVE8ximDiys1
+                      exqr5uECgYEA90fG/qnvFZrk8Twf7vw/4i0rXmQ2I3y9fXB4NG9EIRZV95OvYBFs
+                      qBRmYABELhvx5blxYWAVb+G+7k7rIGGxKo7f0KOZT5hIhWTXLLJwSsWcqJtYzHhu
+                      O9q0QrfD+Q3yHLvOIvgT0PkuLIVvMiKd/c9oPMdYRIp+3g+fvlBgS28CgYEA6Giu
+                      yxQuMi2+ZsNdLcXbA6nTmMN0hj+1b/P0lM1w5SjuaxR/GL80iAXdlrunx8/w8UHO
+                      3R9IxeLX3jtqyAf5L4SSsUE4ct2jSUjI5mLRNr4lbSyAMOOqwHnRkhhWcziipNTy
+                      oy3b/HDZrIjW/u4GzR6Qbp/pOYCSfah5EO4zK+UCgYB/YZpA1Ykzt/b3zeElWwwN
+                      lvcgSL8ayMdUNvu1BxwxbzAZuRo+grtWWiviiECXAA48KKsfXj+swr14RW8Z3zlE
+                      kxT4hU4Ukn3JOYkenUz7N5DbyiqUKfWfH6p8M+3f/i8aXiRyHxkWLUZ76MC/MtXw
+                      SUeJB6eQp0dzXNkNUJpKQQKBgQCr2oSt/E0wo6ywdnQXXb/W1KR3yMgIYWG72Awa
+                      YFPD0GGEYtKcrP6eOqAhTsABO50x+PSLhA+e7F+toAgUw/iaD5Eda1nfbk7I6P5N
+                      hfKoZTBtq0NbY24nB61VN5PtfYqfEiwdR9Lst1Huh/1a4w26bYhllO+zqoQoUQS8
+                      5TaHlQKBgQD1iUw7y1LZyWforeVT6pKMUFgqQZfDSPZYSZgR/xFr+PSeXSX/hQJf
+                      a5D6I7G6lPAVLLHlDSffAyWQkUITmHYenKR4GCt/sLAu16Beyif4Fbi+6VWN0kbT
+                      Z7ZsUgAWFCpGXh6WhqiCLt/lkLf+946iYM3w6f98sh+QD7VYgDBV1Q==
+                      -----END RSA PRIVATE KEY-----
+
+
+
