@@ -17,7 +17,7 @@ spring:
         git:
           uri: git@github.com:renyunwei/config-service.git
           baseDir: H:\STS\workSpace_boot\config-server
-#          search-paths: /spring-server-a
+          search-paths: /*
 #          username: renyunwei                                    # 访问git仓库的用户名
 #          password: renywei.7953506                              # 访问git仓库的用户密码
           ignoreLocalSshSettings: true
